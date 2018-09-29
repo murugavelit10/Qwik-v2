@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Courgette|Crete+Round');
+/*
+font-family: 'Crete Round', serif;
+font-family: 'Courgette', cursive;
+font-family: 'Bree Serif', serif;
+*/
+
+/* common styles */
+a{text-decoration:none !important}
+img{border:0 !important}
+.clearfix{clear:both !important}
+.fl{float:left !important}
+.fr{float:right !important}
+.hide, .hidden{display:none !important}
+.show{display:block !important}
+.no-border{border:0 !important}
+.m-top-3{margin-top:3px !important}
+.m-left-10{margin-left:10px !important}
+.m-top-5{margin-top:5px !important}
+.m-top-10{margin-top:10px !important}
+.w-100{width:100px !important}
+.w-15-{width:15% !important}
+.w-85-{width:85% !important}
+
+/* buttons */
+.btn{
+	border:0;
+	color: #fff;
+	background: #0b86bc;
+	border-radius: 5px;
+	padding: 3px 5px;
+	margin: 0;
+	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+.btn:hover {
+	color:#000;
+	box-shadow: 1px 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.btn.success{
+	background: #008815;
+}
+.btn.error{
+	background: #f00;
+}
+.btn.warning{
+	background: #fa0;
+}
+
+/* borders */
+.white-border{
+	border-color: #fff;
+}
+.black-border{
+	border-color: #000;
+}
+.success-border{
+	border-color: #008815;
+}
+.error-border{
+	border-color: #f00;
+}
+.warning-border{
+	border-color: #fa0;
+}
+
+/* app styles */
+body{
+	margin: 0;
+	padding: 0;
+	font: 400 14px/18px 'Crete Round', Helvetica, Arial, sans-serif;
+	min-width: 400px;
+}
+header{
+	margin: 0 0 5px 0;
+}
+.app-title-24{
+	font: 400 24px/30px 'Bree Serif', Helvetica, Arial, sans-serif;
+	margin: 3px 0;
+	color: #03a9f4;
+}
+.logo {
+	border: 0;
+	background: url('../images/icon-48x48.png') no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+	background-size: 32px;
+}
+.labels, .labelDetails, .addLabelForm, .addLabelDetailForm{
+	margin: 5px;
+}
+.labelHeading, .labelDetailHeading{
+	font: 400 18px/24px 'Courgette', Arial, Helvetica, sans-serif;
+}
+.addLabel, .addLabelDetail, .addInput{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #47B325;
+	text-decoration: none;
+	font: 800 20px/22px 'Bree Serif', Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-align: center;
+	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.addLabel:hover, .addLabelDetail:hover, .addInput:hover{
+	box-shadow: 1px 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+.labelsList, .labelDetailsList{
+	list-style: none;
+	margin: 10px 0 0;
+	padding: 0;
+	font: 400 14px/18px 'Bree Serif', Arial, Helvetica, sans-serif;
+}
+.label, .labelDetail{
+	margin: 0;
+	padding: 5px;
+	background: #03a9f4;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	/*cursor: pointer;*/
+}
+.label:first-child, .labelDetail:first-child{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.label:last-child, .labelDetail:last-child{
+	border: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*.label:hover, .labelDetail:hover{
+	background: #294E77;
+}*/
+.label/* .labelText*/, .labelDetail/* .labelText*/{
+	cursor: pointer;
+}
+.label/* .labelText*/:hover, .labelDetail/* .labelText*/:hover{
+	color: #00366c;
+}
+.no-label{
+	color: #f00;
+}
+.copyright {
+	font: 400 12px/16px 'Bree Serif', Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* form */
+.field{
+	margin: 5px 0;
+}
+.field input[type=text], .field input[type=password], .field select {
+	border: 1px solid #ccc;
+	border-radius: 0;
+	margin: 0;
+	padding: 5px;
+	font: 400 13px/16px 'Crete Round', Arial, Helvetica, sans-serif;
+}
+.field select {
+	padding: 4px;
+}
+.field input[type=text]:focus, .field input[type=password]:focus, .field input[type=checkbox]:focus, .field input[type=radio]:focus, .field textarea:focus, .field select:focus {
+	outline: none;
+}
+.btn.edit{
+	background: #a3a3a3;
+}
+.mandatory-field {
+	border: 1px solid #fa0;
+}

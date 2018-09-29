@@ -1,0 +1,56 @@
+{
+    "manifest_version": 2,
+    "name": "Qwik",
+    "version": "1.0.0",
+    "description": "It's a Google chrome extension that let's you bookmark web address and then automate form fill and navigate to another address",
+    "icons": {
+        "16": "images/icon-16x16.png",
+		"48": "images/icon-48x48.png",
+		"128": "images/icon-128x128.png"
+    },
+    "browser_action": {
+		"default_icon": {
+			"19": "images/icon-19x19.png",
+			"38": "images/icon-38x38.png"
+		},
+		"default_popup": "index.html"
+    },
+    "background": {
+        "persistent": false,
+        "scripts": ["scripts/bg.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": ["scripts/cs.js"],
+            "run_at": "document_start",
+            "all_frames": true
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": ["scripts/cs.js"],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "http://*/",
+        "https://*/",
+        "contextMenus",
+        "activeTab",
+        "tabs",
+        "idle",
+        "webRequestBlocking",
+        "webNavigation",
+        "alarms",
+        "storage",
+        "unlimitedStorage",
+        "notifications"
+    ]
+}
